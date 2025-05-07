@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/webp" href="/aappa-icon.webp" />
+    
+   
+    <title>AAPPA-Books</title>
+    <style>
+      body {
+        background-image: url('/skeleton-with-apple.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .logo {
+        position: fixed; /* Change to fixed to make it visible across all content */
+        top: 10px;
+        right: 10px;
+        border: 2px solid white; /* Optional: Add a border around the circle */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for better visibility */
+        width: 50px; /* Adjust size as needed */
+        height: 50px; /* Make it a square */
+        border-radius: 50%; /* Make it a circle */
+        object-fit: cover; /* Ensure the image fits within the circle */
+        z-index: 1000; /* Ensure it stays on top of other content */
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AAPPA-Books</title>
+  </head>
+  <body>
+    <img src="/aappa-icon.webp" alt="AAPPA Logo" class="logo" />
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
